@@ -119,7 +119,7 @@ const createCard = (character, index) => {
   const front = createElement("div", "face front"); // Cria um elemento <div> com a classe "face front"
   const back = createElement("div", "face back"); // Cria um elemento <div> com a classe "face back"
 
-  front.style.backgroundImage = `url('../images/${character}.png')`; // Define a imagem de fundo da face frontal
+  front.style.backgroundImage = `url('./images/${character}.png')`; // Define a imagem de fundo da face frontal
 
   card.appendChild(position); // Adiciona o elemento de posição como filho do elemento da carta
   card.appendChild(front); // Adiciona o elemento da face frontal como filho do elemento da carta
