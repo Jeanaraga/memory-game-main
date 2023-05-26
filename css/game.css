@@ -7,7 +7,7 @@ main {
   background-image: url('../images/bg.jpg');
   background-size: cover;
   min-height: 110vh;
-  height: auto;
+  height: 100%;
   align-items: center;
   justify-content: center;
 }
@@ -49,8 +49,10 @@ header {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(8, 1fr); /* Dividindo em 6 colunas */
-  gap: 15px; /* Espaçamento entre as colunas */
+  grid-template-columns: repeat(8, 1fr);
+  /* Dividindo em 6 colunas */
+  gap: 15px;
+  /* Espaçamento entre as colunas */
   width: 100%;
   max-width: 80vw;
   height: 85vh;
@@ -59,7 +61,8 @@ header {
 
 .card {
   aspect-ratio: 3/4;
-  width: 90%; /* Reduzindo o tamanho das cartas para 70% */
+  width: 90%;
+  /* Reduzindo o tamanho das cartas para 70% */
   border-radius: 5px;
   position: relative;
   transition: all 400ms ease;
@@ -106,41 +109,52 @@ header {
 
 header .team.active {
   /* Estilos para a equipe ativa */
-  background-color: #6c3ca08c; /* Altere para a cor desejada */
+  background-color: #6c3ca08c;
+  /* Altere para a cor desejada */
   border: #633197;
   animation: myAnim 2s linear 0s infinite normal forwards;
 }
 
 @keyframes myAnim {
-	0% {
-		animation-timing-function: ease-out;
-		transform: scale(1);
-		transform-origin: center center;
-	}
+  0% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+    transform-origin: center center;
+  }
 
-	10% {
-		animation-timing-function: ease-in;
-		transform: scale(0.91);
-	}
+  10% {
+    animation-timing-function: ease-in;
+    transform: scale(0.91);
+  }
 
-	17% {
-		animation-timing-function: ease-out;
-		transform: scale(0.98);
-	}
+  17% {
+    animation-timing-function: ease-out;
+    transform: scale(0.98);
+  }
 
-	33% {
-		animation-timing-function: ease-in;
-		transform: scale(0.87);
-	}
+  33% {
+    animation-timing-function: ease-in;
+    transform: scale(0.87);
+  }
 
-	45% {
-		animation-timing-function: ease-out;
-		transform: scale(1);
-	}
+  45% {
+    animation-timing-function: ease-out;
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 920px) {
   .grid {
-    grid-template-columns: repeat(4, 1fr); /* Dividindo em 4 colunas em telas menores */
+    grid-template-columns: repeat(4, 1fr);
+    /* Dividindo em 4 colunas em telas menores */
   }
+}
+
+.footer {
+  margin-top: 20px;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #ccc;
+  font-family: 'Poppins', sans-serif;
 }
